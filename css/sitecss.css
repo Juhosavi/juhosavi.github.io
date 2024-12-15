@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Cascadia';
+    src: url('../fonts/fonts-cascadia.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Cascadia', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center; /* Tämä keskittää kaiken sisällön headerissa */
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 10px 0 0; /* Marginia voi muokata, mutta ei tarvitse text-alignia tässä */
+}
+
+
+header img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+
+
+header p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #333;
+}
+
+main p {
+    color: #555;
+    font-size: 16px;
+}
