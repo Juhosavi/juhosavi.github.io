@@ -1,49 +1,80 @@
-@font-face {
-    font-family: 'Cascadia';
-    src: url('../fonts/fonts-cascadia.ttf') format('truetype');
-}
-
+/* Yleiset tyylit */
 body {
-    font-family: 'Cascadia', Arial, sans-serif;
+    font-family: 'Courier New', monospace; /* Retro-tietokonefontti */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center; /* Tämä keskittää kaiken sisällön headerissa */
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 10px 0 0; /* Marginia voi muokata, mutta ei tarvitse text-alignia tässä */
-}
-
-
-header img {
-    max-width: 200px;
-    border-radius: 50%;
-}
-
-
-
-header p {
-    margin: 5px 0;
-    font-size: 18px;
-}
-
-main {
-    padding: 20px;
+    background: linear-gradient(to bottom, #0f1624, #152238); /* Tumma sininen gradient */
+    color: #fff;
     text-align: center;
 }
 
-main h2 {
-    color: #333;
+header {
+    padding: 20px;
 }
 
-main p {
-    color: #555;
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase; /* Muuttaa isot kirjaimet */
+    letter-spacing: 4px; /* Väliä kirjainten välille */
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Pyöreä kuva */
+    margin: 20px 0;
+    border: 3px solid #4caf50; /* Kuvan kehys */
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 600px;
+    line-height: 1.5; /* Riviväli */
+    text-shadow: 0 0 5px #ffffff22; /* Hento hehku teksteihin */
+}
+
+/* Sosiaalisen median linkit */
+.social-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #4caf50; /* Vihreä hover */
+    transform: scale(1.2); /* Suurentaa hieman */
+}
+
+/* Painikkeet */
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 25px;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
     font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.buttons a:hover {
+    background: #4caf50; /* Vihreä tausta */
+    color: #000;
+    border-color: #45a049;
+}
+
+/* Linjat */
+hr {
+    border: none;
+    height: 1px;
+    background: #ffffff44;
+    margin: 20px auto;
+    max-width: 400px;
 }
