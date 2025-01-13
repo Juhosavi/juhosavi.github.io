@@ -98,8 +98,8 @@ header p {
     justify-content: center;
     text-align: center;
     margin: 20px auto;
-    width: 95%; /* Leveys laajennettu lähes koko näytölle */
-    max-width: 800px; /* Maksimileveys suurempi */
+    width: 95%;
+    max-width: 800px;
     background-color: #243447;
     padding: 20px;
     border-radius: 10px;
@@ -107,11 +107,13 @@ header p {
 }
 
 /* Kuvien ja videoiden muotoilu */
-#projects img {
+#projects img,
+#projects iframe {
     border-radius: 8px;
     margin-bottom: 10px;
-    width: 100%; /* Kuva mukautuu kortin leveyteen */
-    max-width: 750px; /* Maksimileveys suurempi */
+    width: 500px; /* Leveys yhtenäinen */
+    height: 315px; /* Korkeus yhtenäinen */
+    object-fit: cover; /* Kuva täyttää tilan tasaisesti */
 }
 
 /* Linkit ja tekstit */
@@ -142,4 +144,18 @@ header p {
 
 #skills li strong {
     color: #4caf50;
+}
+
+/* Responsiivisuus pienille näytöille */
+@media (max-width: 600px) {
+    #projects div {
+        width: 100%; /* Vie koko näytön leveys */
+        padding: 15px;
+    }
+
+    #projects img,
+    #projects iframe {
+        width: 100%; /* Mukautuu pienempään näyttöön */
+        height: auto; /* Korkeus säätyy suhteessa */
+    }
 }
