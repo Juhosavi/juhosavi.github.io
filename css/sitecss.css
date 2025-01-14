@@ -1,9 +1,9 @@
 /* Yleiset tyylit */
 body {
-    font-family: 'Courier New', monospace; /* Retro-tyylinen fontti */
+    font-family: 'Courier New', monospace;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #0f1624, #152238); /* Tumma gradient-tausta */
+    background: linear-gradient(to bottom, #0f1624, #152238);
     color: #fff;
     text-align: center;
 }
@@ -50,13 +50,13 @@ header p {
 
 /* Napit */
 .buttons {
-    display: inline-block; /* Nappien keskitys */
+    display: inline-block;
     margin: 20px 0;
 }
 
 .buttons button {
-    background: none; /* Läpinäkyvä tausta */
-    border: 2px solid #4caf50; /* Vihreä kehys */
+    background: none;
+    border: 2px solid #4caf50;
     color: #fff;
     padding: 10px 20px;
     margin: 5px;
@@ -68,14 +68,14 @@ header p {
 }
 
 .buttons button:hover {
-    background: #4caf50; /* Tausta muuttuu vihreäksi */
-    color: #000; /* Teksti muuttuu mustaksi */
+    background: #4caf50;
+    color: #000;
     border-color: #45a049;
 }
 
 /* Sisältöalueet */
 .content-section {
-    display: none; /* Piilotettu oletuksena */
+    display: none;
     padding: 20px;
     text-align: center;
     max-width: 800px;
@@ -87,11 +87,11 @@ header p {
 
 .content-section h2 {
     color: #4caf50;
-    text-align: center;
 }
 
 /* Projektien tyylit */
-#projects div {
+#projects div,
+#small-projects div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,17 +107,18 @@ header p {
 }
 
 /* Kuvien ja videoiden muotoilu */
-#projects img,
-#projects iframe {
+#projects iframe,
+#small-projects iframe {
     border-radius: 8px;
     margin-bottom: 10px;
-    width: 500px; /* Leveys yhtenäinen */
-    height: 315px; /* Korkeus yhtenäinen */
-    object-fit: cover; /* Kuva täyttää tilan tasaisesti */
+    width: 500px;
+    height: 315px;
+    object-fit: cover;
 }
 
 /* Linkit ja tekstit */
-#projects a {
+#projects a,
+#small-projects a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -125,37 +126,23 @@ header p {
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-#projects a:hover {
+#projects a:hover,
+#small-projects a:hover {
     color: #4caf50;
     text-shadow: 0 0 8px #4caf50;
 }
 
-/* Taitolistan tyylit (Skills) */
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills li {
-    font-size: 18px;
-    margin: 10px 0;
-    line-height: 1.5;
-}
-
-#skills li strong {
-    color: #4caf50;
-}
-
 /* Responsiivisuus pienille näytöille */
 @media (max-width: 600px) {
-    #projects div {
-        width: 100%; /* Vie koko näytön leveys */
+    #projects div,
+    #small-projects div {
+        width: 100%;
         padding: 15px;
     }
 
-    #projects img,
-    #projects iframe {
-        width: 100%; /* Mukautuu pienempään näyttöön */
-        height: auto; /* Korkeus säätyy suhteessa */
+    #projects iframe,
+    #small-projects iframe {
+        width: 100%;
+        height: auto;
     }
 }
