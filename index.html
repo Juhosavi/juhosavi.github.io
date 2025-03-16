@@ -1,100 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juho Savinainen | Game Developer</title>
-    <link rel="stylesheet" href="css/sitecss.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juho Savinainen | Game Developer</title>
+  <!-- Google Fonts: Montserrat -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/sitecss.css" />
 </head>
 <body>
-
-<header>
-    <h1>Juho Savinainen</h1>
-    <img src="images/userimage.png" alt="Juho Savinainen">
-    <p>Hi there, and thanks for stopping by! I'm Juho, a passionate game developer who enjoys creating immersive experiences.</p>
-    <hr>
-    <div class="social-links">
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img
+        src="images/userimage.png"
+        alt="Juho Savinainen"
+        class="profile-img"
+      />
+      <h1>Juho Savinainen</h1>
+      <p>Game Developer | Crafting Next-Generation Interactive Worlds</p>
+      <div class="social-links">
         <a href="https://github.com/Juhosavi" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/juho-savinainen-61819122b/" target="_blank">LinkedIn</a>
-        <a href="https://www.youtube.com/@SaviInteractive" target="_blank">YouTube</a>
+        <a
+          href="https://www.linkedin.com/in/juho-savinainen-61819122b/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a
+          href="https://www.youtube.com/@SaviInteractive"
+          target="_blank"
+          >YouTube</a
+        >
+      </div>
     </div>
-</header>
+  </header>
 
-<main>
-    <div class="buttons">
-        <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('skills')">Skills</button>
-        <button onclick="showSection('small-projects')">Small Projects</button>
+  <!-- Navigaatio -->
+  <nav>
+    <div class="nav-buttons">
+      <button class="nav-btn" onclick="showSection('projects')">Projects</button>
+      <button class="nav-btn" onclick="showSection('skills')">Skills</button>
+      <button class="nav-btn" onclick="showSection('small-projects')">Small Projects</button>
+      <button class="nav-btn" onclick="showSection('contact')">Contact</button>
     </div>
+  </nav>
 
+  <!-- Pääsisältö -->
+  <main>
+    <!-- Projects Section -->
     <section id="projects" class="content-section">
-        <h2>My Projects</h2>
-
-        <div>
-            <h3>Spaceman & Spaceboy</h3>
-            <img alt="Spaceman & Spaceboy" width="500px" height="315px" src="https://img.itch.zone/aW1nLzE4OTE5MzE3LnBuZw==/315x250%23c/F%2BWus1.png" />
-            <p><a href="https://juhosavi.itch.io/spacegame" target="_blank">Play the game</a></p>
-            <p>A solo project inspired by Space Invaders, developed using Unity and C#. I handled all programming, game design, and implementation myself, except for the music. The game includes a multiplayer mode built with Photon.</p>
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <!-- Spaceman & Spaceboy -->
+        <div class="project-card">
+          <h3>Spaceman &amp; Spaceboy</h3>
+          <img
+            src="https://img.itch.zone/aW1nLzE4OTE5MzE3LnBuZw==/315x250%23c/F%2BWus1.png"
+            alt="Spaceman & Spaceboy"
+          />
+          <p><strong>Engine:</strong> Unity<br>
+             <strong>Language:</strong> C#<br>
+             <strong>Team Size:</strong> 1 (Solo Project)<br>
+             <strong>Duration:</strong> 2 months</p>
+          <p>
+            <a href="https://juhosavi.itch.io/spacegame" target="_blank"
+              >Play the game</a
+            >
+          </p>
+          <p>
+            A solo project inspired by Space Invaders. I created the graphics, sound effects, and game design, and programmed everything except music. The game also features a multiplayer mode built with Photon.
+          </p>
         </div>
 
-        <div>
-            <h3>Dark Rooms</h3>
-            <iframe width="500" height="315" src="https://www.youtube.com/embed/7ZX4Ji5UHEM"
-                    title="Dark Rooms Gameplay" frameborder="0" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=7ZX4Ji5UHEM&ab_channel=Diskokeisari" target="_blank">Gameplay video</a></p>
-            <p>A first-person horror game developed in Unity with C#. The player must solve a mystery and escape a haunted hotel. As the project lead, I was responsible for programming core gameplay mechanics, player movement, interactions, and level building.</p>
+        <!-- Dark Rooms -->
+        <div class="project-card">
+          <h3>Dark Rooms</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/7ZX4Ji5UHEM"
+              title="Dark Rooms Gameplay"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p><strong>Engine:</strong> Unity<br>
+             <strong>Language:</strong> C#<br>
+             <strong>Team Size:</strong> 5<br>
+             <strong>Duration:</strong> 3 months</p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=7ZX4Ji5UHEM"
+              target="_blank"
+              >Gameplay video</a
+            >
+          </p>
+          <p>
+            A first-person horror game focusing on puzzle-solving and atmospheric tension. I served as the lead programmer and project lead, responsible for most of the player logic, code, game design, and world-building.
+          </p>
         </div>
 
-        <div>
-            <h3>First Person Hockey Multiplayer</h3>
-            <iframe width="500" height="315" src="https://www.youtube.com/embed/jUX5UMskR-0"
-                    title="First Person Hockey Multiplayer Gameplay" frameborder="0" allowfullscreen></iframe>
-            <p><a href="https://www.youtube.com/watch?v=jUX5UMskR-0&ab_channel=Diskokeisari" target="_blank">Gameplay video</a></p>
-            <p>A multiplayer hockey game built in Unity with C#. I focused on multiplayer features such as building the lobby system and implementing gameplay mechanics. The project is still ongoing.</p>
+        <!-- First Person Hockey -->
+        <div class="project-card">
+          <h3>First Person Hockey Multiplayer</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/jUX5UMskR-0"
+              title="First Person Hockey Multiplayer Gameplay"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p><strong>Engine:</strong> Unity<br>
+             <strong>Language:</strong> C#<br>
+             <strong>Team Size:</strong> 3 programmers<br>
+             <strong>Status:</strong> Ongoing</p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=jUX5UMskR-0"
+              target="_blank"
+              >Gameplay video</a
+            >
+          </p>
+          <p>
+            A multiplayer hockey experience built with Unity and C#. I'm responsible for network features, core gameplay logic, and player movement in a multiplayer environment. The project is still under development.
+          </p>
         </div>
 
-        <div>
-            <h3>SpaceCat</h3>
-            <iframe width="500" height="315" src="https://www.youtube.com/embed/9X_vHkCXZ6A"
-                    title="SpaceCat Gameplay" frameborder="0" allowfullscreen></iframe>
-            <p><a href="https://youtu.be/9X_vHkCXZ6A" target="_blank">Gameplay video</a></p>
-            <p>My first game project developed with Unity and C#. In this team effort, I was mainly responsible for game programming, including player movement, enemy behaviors, and game mechanics.</p>
+        <!-- SpaceCat -->
+        <div class="project-card">
+          <h3>SpaceCat</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/9X_vHkCXZ6A"
+              title="SpaceCat Gameplay"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p><strong>Engine:</strong> Unity<br>
+             <strong>Language:</strong> C#<br>
+             <strong>Team Size:</strong> 4<br>
+             <strong>Duration:</strong> 3 months</p>
+          <p>
+            <a href="https://youtu.be/9X_vHkCXZ6A" target="_blank"
+              >Gameplay video</a
+            >
+          </p>
+          <p>
+            A 3-month project developed by a 4-person team. I handled most of the code, including character movement, enemy AI, and scoring systems – essentially the core gameplay mechanics.
+          </p>
         </div>
+      </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="content-section">
-        <h2>My Skills</h2>
-        <ul>
-            <li><strong>C# & Unity:</strong> My main expertise</li>
-            <li><strong>Other skills:</strong> C++, Python, JavaScript, HTML, CSS</li>
-            <li><strong>Learning:</strong> Unreal Engine</li>
-            <li><strong>Version Control:</strong> Github, Plastic SCM, Sourcetree</li>
-            <li><strong>Blender:</strong> Basic modeling skills</li>
-            <li><strong>Others:</strong> Visual Studio, Code</li>
-        </ul>
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li><strong>C# &amp; Unity:</strong> Main expertise</li>
+        <li><strong>Other Skills:</strong> C++, Python, JavaScript, HTML, CSS</li>
+        <li><strong>Learning:</strong> Unreal Engine</li>
+        <li><strong>Version Control:</strong> GitHub, Plastic SCM, Sourcetree</li>
+        <li><strong>Blender:</strong> Basic modeling</li>
+        <li><strong>Others:</strong> Visual Studio, VS Code</li>
+      </ul>
     </section>
 
-<section id="small-projects" class="content-section">
-    <h2>Small Projects</h2>
-    <div>
-        <h3>Small Unreal Engine Cinematic</h3>
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/MolC3RQ9_Zg"
-                title="Small Unreal Engine Cinematic" frameborder="0" allowfullscreen></iframe>
-        <p>Small Unreal Engine cinematic I created for fun and learning to use Unreal Engine better.</p>
-    </div>
+    <!-- Small Projects Section -->
+    <section id="small-projects" class="content-section">
+      <h2>Small Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Small Unreal Engine Cinematic</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/MolC3RQ9_Zg"
+              title="Small Unreal Engine Cinematic"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>
+            A short cinematic created to learn Unreal Engine.
+          </p>
+        </div>
 
-    <div>
-        <h3>Bubble Brawl</h3>
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/UjpuZHBd6EU"
-                title="Bubble Brawl Gameplay" frameborder="0" allowfullscreen></iframe>
-        <p><a href="https://juhosavi.itch.io/bubble-brawl" target="_blank">Play the game</a></p>
-        <p>Global Game Jam 2025 Game, 2days to make. Simple fun 2 player game where you try to strike opponents bubble head.</p>
-    </div>
-</section>
+        <div class="project-card">
+          <h3>Bubble Brawl</h3>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/UjpuZHBd6EU"
+              title="Bubble Brawl Gameplay"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>
+            <a href="https://juhosavi.itch.io/bubble-brawl" target="_blank"
+              >Play the game</a
+            >
+          </p>
+          <p>
+            A 2-day Global Game Jam project for two players. Pop your opponent’s
+            bubble to win.
+          </p>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>
+        Interested in working together or want to know more about my projects?
+        Feel free to reach out!
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:savinainen.juho@gmail.com">savinainen.juho@gmail.com</a>
+      </p>
+    </section>
+  </main>
 
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
