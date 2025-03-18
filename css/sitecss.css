@@ -131,7 +131,9 @@ main {
 .project-card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  text-align: center;
 }
+
 
 .project-card img {
   width: 100%;
