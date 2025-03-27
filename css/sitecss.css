@@ -203,6 +203,15 @@ main {
   gap: 20px;
   align-items: flex-start;
 }
+/* PROJECT MEDIA - Lisää tämä */
+.project-media img[src*="chessgame"] {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
 
 /* PROJECT MEDIA */
 .project-media {
@@ -211,7 +220,7 @@ main {
 }
 
 .project-media img {
-  width: 100%;
+  width: 90%;
   height: 300px; /* Kiinteä korkeus */
   object-fit: cover;
   display: block;
