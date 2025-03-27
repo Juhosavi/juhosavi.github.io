@@ -152,7 +152,7 @@ main {
 
 /* PROJECT CARD */
 .project-card {
-  background: #1a1a1a; /* säilytetään alkuperäinen pohjaväri */
+  background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -163,25 +163,57 @@ main {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Keskitetään projektikorttien otsikot */
 .project-card h3 {
   text-align: center;
-  margin-bottom: 15px;
-}
-
-.project-header {
-  margin-bottom: 15px;
-}
-
-.project-header h3 {
+  margin-bottom: 20px;
   font-size: 1.5rem;
+}
+
+/* PROJECT CONTENT */
+.project-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* PROJECT MEDIA */
+.project-media {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-media img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+}
+
+.project-media img[src*="chessgame"] {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.project-media p {
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* VIDEO CONTAINER */
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -196,53 +228,32 @@ main {
   border: 0;
 }
 
-/* PROJECT CONTENT - media ja teksti rinnakkain */
-.project-content {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: flex-start;
-}
-/* PROJECT MEDIA - Lisää tämä */
-.project-media img[src*="chessgame"] {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  margin: 0 auto;
-  display: block;
-}
-
-
-/* PROJECT MEDIA */
-.project-media {
-  flex: 1;
-  max-width: 45%;
-}
-
-.project-media img {
-  width: 90%;
-  height: 300px; /* Kiinteä korkeus */
-  object-fit: cover;
-  display: block;
-}
-
 /* PROJECT DETAILS */
 .project-details {
   flex: 1;
   max-width: 55%;
   padding: 10px 0;
   line-height: 1.5;
-  text-align: center; /* keskitetään tekstisisällöt */
 }
 
 .project-details ul {
-  display: inline-block;
-  text-align: left; /* listan sisältö vasemmalle */
   margin-left: 20px;
+  margin-top: 0;
 }
 
 .project-details li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.project-details a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* SKILLS SECTION */
@@ -309,13 +320,13 @@ footer p {
     font-size: 2rem;
   }
 
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
   .nav-btn {
     font-size: 0.9rem;
     padding: 8px 16px;
-  }
-
-  .project-card h3 {
-    font-size: 1.3rem;
   }
 
   .project-content {
@@ -328,6 +339,12 @@ footer p {
   }
 
   .project-media img {
-    height: 250px; /* Pienempi korkeus mobiilissa */
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .project-media img[src*="chessgame"] {
+    width: 250px;
+    height: 250px;
   }
 }
