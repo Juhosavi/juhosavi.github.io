@@ -1,25 +1,21 @@
+// Simple section switcher with default to "projects"
 document.addEventListener('DOMContentLoaded', () => {
-  // Näytä oletuksena "Projects" -osio
-  showSection('projects');
+  const DEFAULT_SECTION = 'projects';
+  const sections = Array.from(document.querySelectorAll('.content-section'));
+  const navButtons = Array.from(document.querySelectorAll('.nav-btn'));
 
-  // Navigaatiopainikkeiden kuuntelu
-  const navButtons = document.querySelectorAll('.nav-btn');
-  navButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const sectionId = button.getAttribute('data-section');
-      showSection(sectionId);
-    });
+  const show = (id) => {
+    sections.forEach(s => s.style.display = 'none');
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'block';
+    navButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-section') === id));
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  navButtons.forEach(btn => {
+    btn.addEventListener('click', () => show(btn.getAttribute('data-section')));
   });
+
+  // initial
+  show(DEFAULT_SECTION);
 });
-
-// Funktio, joka näyttää valitun osion ja piilottaa muut
-function showSection(sectionId) {
-  const sections = document.querySelectorAll('.content-section');
-  sections.forEach(section => {
-    section.style.display = 'none';
-  });
-  const activeSection = document.getElementById(sectionId);
-  if (activeSection) {
-    activeSection.style.display = 'block';
-  }
-}

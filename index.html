@@ -4,36 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Juho Savinainen | Game Developer</title>
-  <!-- Google Fonts: Montserrat -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/sitecss.css" />
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="header-content">
-      <img
-        src="images/userimage.png"
-        alt="Juho Savinainen"
-        class="profile-img"
-      />
+      <img src="images/userimage.png" alt="Juho Savinainen" class="profile-img"/>
       <h1>Juho Savinainen</h1>
       <p>Unity & C# Game Developer with unstoppable passion. I build games in my free time and learn something new every day. My dream is to work in the game industry and make meaningful experiences for players.</p>
       <div class="social-links">
-        <a href="https://github.com/Juhosavi" target="_blank">GitHub</a>
-        <a
-          href="https://www.linkedin.com/in/juho-savinainen-61819122b/"
-          target="_blank"
-          >LinkedIn</a
-        >
-        <a
-          href="https://www.youtube.com/@SaviInteractive"
-          target="_blank"
-          >YouTube</a
-        >
+        <a href="https://github.com/Juhosavi" target="_blank" class="btn-pill">GitHub</a>
+        <a href="https://www.linkedin.com/in/juho-savinainen-61819122b/" target="_blank" class="btn-pill">LinkedIn</a>
+        <a href="https://www.youtube.com/@SaviInteractive" target="_blank" class="btn-pill">YouTube</a>
       </div>
     </div>
   </header>
@@ -41,394 +25,377 @@
   <!-- Navigation -->
   <nav>
     <ul class="nav-list">
-      <li><button class="nav-btn" data-section="about">About</button></li>
-      <li><button class="nav-btn" data-section="resume">Resume</button></li>
       <li><button class="nav-btn" data-section="projects">Projects</button></li>
-      <li><button class="nav-btn" data-section="skills">Skills</button></li>
       <li><button class="nav-btn" data-section="small-projects">What I Build to Learn & Explore</button></li>
+      <li><button class="nav-btn" data-section="resume">Resume</button></li>
+      <li><button class="nav-btn" data-section="skills">Skills</button></li>
+      <li><button class="nav-btn" data-section="about">About</button></li>
       <li><button class="nav-btn" data-section="contact">Contact</button></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
-  <main>
-    <!-- About Section -->
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
-      <p>Hi! I'm an aspiring game developer currently studying to become an engineer at Metropolia University of Applied Sciences. I previously completed a degree in Information and Communication Technology, specializing in game programming and software development. Games have always been a passion of mine, and I'm thrilled to be pursuing my dream of working in the gaming industry. My goal is to become a professional game developer, creating innovative and immersive gaming experiences that captivate players.
-      </p>
+  <main id="main">
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <div class="section-content">
+        <div class="project-grid">
+
+          <!-- Project 1: Finnish Pipo Hockey -->
+          <div class="project-card">
+            <h3>Finnish Pipo Hockey</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <img src="images/fph.gif" alt="Finnish Pipo Hockey Gameplay" />
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> Third-person multiplayer hockey game (currently in development).</li>
+                  <li><strong>Tools:</strong> Unity, C#, Blender</li>
+                  <li><strong>Team Size:</strong> 3 programmers</li>
+                  <li><strong>Role:</strong> Gameplay Programmer & Game Designer</li>
+                  <li><strong>Challenges:</strong> Multiplayer synchronization and gameplay balance.</li>
+                </ul>
+                <p>A third-person multiplayer hockey game developed with Unity and C#. Players control individual characters in team-based hockey matches using a dedicated server for online play.</p>
+
+                <div class="my-contributions">
+                  <h4>My Contributions</h4>
+                  <ul>
+                    <li>Built the full lobby system with room creation and joining functionality</li>
+                    <li>Developed the custom game rule logic and scoring system</li>
+                    <li>Handled goal detection and goal event logic</li>
+                    <li>Overall gameplay programming</li>
+                  </ul>
+                </div>
+
+                <div class="project-btn-group">
+                  <a href="https://www.youtube.com/watch?v=qahDzt_Aobc&ab_channel=FPH" target="_blank" class="btn">Watch Gameplay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Dark Rooms -->
+          <div class="project-card">
+            <h3>Dark Rooms</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <img src="images/horrorrr.gif" alt="Dark Rooms Gameplay" />
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> First-person horror game with puzzle elements.</li>
+                  <li><strong>Tools:</strong> Unity, C#</li>
+                  <li><strong>Team Size:</strong> 5</li>
+                  <li><strong>Role:</strong> Lead Programmer & Project Manager</li>
+                  <li><strong>Challenges:</strong> Balancing tension and puzzle difficulty.</li>
+                </ul>
+                <p>A first-person horror experience focusing on puzzle-solving and atmospheric tension.</p>
+
+                <div class="my-contributions">
+                  <h4>My Contributions</h4>
+                  <ul>
+                    <li>Programmed the player movement and interaction systems</li>
+                    <li>Built the core puzzle mechanics and logic</li>
+                    <li>Handled world-building, level scripting, and visual effects</li>
+                    <li>Managed the project, team workflow, and task coordination</li>
+                  </ul>
+                </div>
+
+                <div class="project-btn-group">
+                  <a href="https://www.youtube.com/watch?v=E9iu_5RWEXo" target="_blank" class="btn">Watch Gameplay</a>
+                  <a href="https://github.com/Juhosavi/DarkRooms" target="_blank" class="btn">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Spaceman & Spaceboy -->
+          <div class="project-card">
+            <h3>Spaceman & Spaceboy</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <img src="images/space.gif" alt="Spaceman & Spaceboy" />
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> 2D platformer with multiplayer elements inspired by classic arcade games.</li>
+                  <li><strong>Tools:</strong> Unity, C#, GIMP, Krita</li>
+                  <li><strong>Team Size:</strong> Solo Project</li>
+                  <li><strong>Challenges:</strong> Implementing smooth multiplayer with Photon networking.</li>
+                </ul>
+                <p>An arcade-style 2D platformer featuring local multiplayer and save/load functionality.</p>
+
+                <div class="my-contributions">
+                  <h4>My Contributions</h4>
+                  <ul>
+                    <li>Created all game assets including sprites, animations and sound effects</li>
+                    <li>Programmed all gameplay mechanics and player controls</li>
+                    <li>Implemented Photon networking for multiplayer functionality</li>
+                    <li>Built the save/load system</li>
+                    <li>Created all UI elements and menu systems</li>
+                  </ul>
+                </div>
+
+                <div class="project-btn-group">
+                  <a href="https://juhosavi.itch.io/spacegame" target="_blank" class="btn">Play Game</a>
+                  <a href="https://github.com/Juhosavi/Spaceman" target="_blank" class="btn">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SpaceCat -->
+          <div class="project-card">
+            <h3>SpaceCat</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <img src="images/spacecat.gif" alt="SpaceCat Gameplay" />
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> 2D platformer with alien enemies.</li>
+                  <li><strong>Tools:</strong> Unity, C#</li>
+                  <li><strong>Team Size:</strong> 4</li>
+                  <li><strong>Duration:</strong> 3 months</li>
+                </ul>
+                <p>A 2D platformer where players navigate alien-infested levels, collecting diamonds and fighting enemies.</p>
+
+                <div class="my-contributions">
+                  <h4>My Contributions</h4>
+                  <ul>
+                    <li>Implemented player movement</li>
+                    <li>Created enemy AI and enemy movement</li>
+                    <li>Built the scoring system and collectible logic</li>
+                    <li>Designed basic level structure</li>
+                  </ul>
+                </div>
+
+                <div class="project-btn-group">
+                  <a href="https://github.com/Juhosavi/games/tree/main/SpaceCatGame" target="_blank" class="btn">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Chess Game & AI Bot -->
+          <div class="project-card">
+            <h3>Chess Game & AI Bot</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <img src="images/chessgame.png" alt="Chess Game & AI Bot board screenshot" class="contain bg-white" />
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> Comprehensive chess game with custom AI bot.</li>
+                  <li><strong>Tools:</strong> C++, SFML</li>
+                  <li><strong>Team Size:</strong> 2</li>
+                  <li><strong>Duration:</strong> 3 months</li>
+                </ul>
+                <p>A complete chess implementation featuring an AI opponent using advanced algorithms.</p>
+
+                <div class="my-contributions">
+                  <h4>My Contributions</h4>
+                  <ul>
+                    <li>Implemented full chess rules including special moves and game end conditions</li>
+                    <li>Developed the AI using alpha-beta pruning for move evaluation</li>
+                    <li>Used multithreading for efficient concurrent move evaluation</li>
+                    <li>Built the visual board and piece interaction using SFML</li>
+                    <li>Handled game loop logic and state transitions</li>
+                  </ul>
+                </div>
+
+                <div class="project-btn-group">
+                  <a href="https://github.com/Juhosavi/Chessbot_cpp" target="_blank" class="btn">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Airport Z -->
+          <div class="project-card">
+            <h3>Airport Z</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/BIVM7mV6PLA" title="Airport Z Gameplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> Web-based adventure survival game with zombie elements.</li>
+                  <li><strong>Tools:</strong> Python, JavaScript, HTML, CSS, SQL</li>
+                  <li><strong>Backend:</strong> Flask + SQL Database</li>
+                  <li><strong>Map API:</strong> Leaflet.js (OpenStreetMap)</li>
+                  <li><strong>Team Size:</strong> 3</li>
+                </ul>
+                <p>A survival game where players navigate between airports using real-world maps while avoiding zombies.</p>
+
+                <div class="my-contributions">
+                  <h4>My Contributions</h4>
+                  <ul>
+                    <li>Developed the full backend with Flask and SQL database integration</li>
+                    <li>Implemented interactive world map navigation using Leaflet.js and OpenStreetMap</li>
+                  </ul>
+                </div>
+
+                <div class="project-btn-group">
+                  <a href="https://github.com/Juhosavi/AirportZ_2077" target="_blank" class="btn">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /project-grid -->
+      </div>
     </section>
 
-<!-- Resume Section -->
-<section id="resume" class="content-section">
-  <h2>Resume Overview</h2>
-  <div class="resume-content">
-    <h3>Education</h3>
-    <ul>
-      <li>
-        <strong>2024–ongoing:</strong> Bachelor of Engineering in ICT at Metropolia University of Applied Sciences
+    <!-- Small Projects Section -->
+    <section id="small-projects" class="content-section">
+      <h2>What I Build to Learn & Explore</h2>
+      <div class="section-content">
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>MetaHuman Face Capture Test</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/WgWmudWs31g" title="MetaHuman Face Capture Test" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> Facial animation test using MetaHuman and iPhone Live Link Face.</li>
+                  <li><strong>Tools:</strong> Unreal Engine 5, MetaHuman, iPhone, Live Link Face</li>
+                  <li><strong>Role:</strong> Performance capture & technical testing</li>
+                </ul>
+                <p>Real-time facial motion capture demo syncing facial expressions and head movement to animation in UE5.</p>
+              </div>
+            </div>
+          </div>
 
-        <br />
-        Specialization: Game Development
-      </li>
-      <li>
-        <strong>2021–2023:</strong> Vocational Qualification in Information and Communications Technology (ICT) : Game Programming / Software Development
-      </li>
-      <li>
-        <strong>2007–2010:</strong> Vocational Qualification in Metalwork and Machinery (Sheet Metal Worker / Welder)
-      </li>
+          <div class="project-card">
+            <h3>Unreal Engine Stealth Game</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/-u6lUZMj-Uw" title="Unreal Engine Stealth Game" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> Stealth game featuring takedowns and obstacle navigation.</li>
+                  <li><strong>Tools:</strong> Unreal Engine 5, Blueprints, Metahumans</li>
+                  <li><strong>Role:</strong> Developer focusing on gameplay mechanics</li>
+                </ul>
+                <p>Takedowns, climbing, patrolling AI with alarms, MetaHumans, Mixamo animations, and a leaderboard.</p>
+              </div>
+            </div>
+          </div>
 
-    </ul>
+          <div class="project-card">
+            <h3>Small Unreal Engine Cinematic</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/MolC3RQ9_Zg" title="Small Unreal Engine Cinematic" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> Short cinematic scene built in Unreal Engine 5.</li>
+                  <li><strong>Tools:</strong> Unreal Engine 5, Sequencer, Blueprints</li>
+                  <li><strong>Role:</strong> Solo project for learning cinematic workflow</li>
+                </ul>
+                <p>Star Wars-inspired cinematic – exploring lighting, animation, cameras and Sequencer in UE5.</p>
+              </div>
+            </div>
+          </div>
 
-    <h3>Previous Employment</h3>
-    <p>Below is a summary of my previous work experience:</p>
-    <ul>
-      <li>
-        <strong>2022 – IT Trainee (Tutors Finland Oy, Spain)</strong><br />
-        Developed a street hockey game in Unity using C#. This
- internship involved prototyping, iterative development, hands
-on coding, and collaboration in a multilingual environment.
-      </li>
-      <li>
-        <strong>2013–2019 – Sewer Specialist (Eerola Oy)</strong><br />
-        Responsible for sewer line unblocking, cleaning, and maintenance. Planned tasks, operated specialized tools and vehicles, and worked independently to solve on-site problems.
-      </li>
-      <li>
-        <strong>2012 – CNC Machinist (SEW Oy)</strong><br />
-        Operated CNC machines with tight tolerances. Required precision, technical understanding, and knowledge of components and processes.
-      </li>
-      <li>
-        <strong>2011 – Security Officer (Securitas Aviation Finland Oy)</strong><br />
-        Conducted passenger and vehicle screenings at Helsinki-Vantaa International Airport. Demanded vigilance, teamwork, and accountability in a shift-based environment, including occasional solo night shifts.
-      </li>
-    </ul>
-  </div>
-</section>
+          <div class="project-card">
+            <h3>Bubble Brawl</h3>
+            <div class="project-content">
+              <div class="project-media">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/UjpuZHBd6EU" title="Bubble Brawl Gameplay" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="project-details">
+                <ul>
+                  <li><strong>Overview:</strong> 2-day Global Game Jam project for two players.</li>
+                  <li><strong>Tools:</strong> Unity, C#</li>
+                  <li><strong>Role:</strong> Developer in a 3-person team</li>
+                </ul>
+                <p>Pop your opponent’s bubble to win. Built in two days during Global Game Jam.</p>
+                <div class="project-btn-group">
+                  <a href="https://juhosavi.itch.io/bubble-brawl" target="_blank" class="btn">Play Game</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
+        </div><!-- /project-grid -->
+      </div>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects" class="content-section">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <!-- Project 1: Finnish Pipo Hockey -->
-    <div class="project-card">
-      <h3>Finnish Pipo Hockey</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <img src="images/fph.gif" alt="Finnish Pipo Hockey Gameplay" />
-          <p><a href="https://www.youtube.com/watch?v=qahDzt_Aobc&ab_channel=FPH" target="_blank">Watch Gameplay Video</a></p>
-        </div>
-        <div class="project-details">
+    <!-- Resume Section -->
+    <section id="resume" class="content-section">
+      <h2>Resume Overview</h2>
+      <div class="section-content">
+        <div class="resume-content">
+          <h3>Education</h3>
           <ul>
-            <li><strong>Overview:</strong> Third-person multiplayer hockey game (currently in development).</li>
-            <li><strong>Tools:</strong> Unity, C#, Blender</li>
-            <li><strong>Team Size:</strong> 3 programmers</li>
-            <li><strong>Role:</strong> Gameplay Programmer & Game Designer</li>
-            <li><strong>Challenges:</strong> Multiplayer synchronization and gameplay balance.</li>
+            <li><strong>2024–ongoing:</strong> Bachelor of Engineering in ICT at Metropolia University of Applied Sciences<br/>Specialization: Game Development</li>
+            <li><strong>2021–2023:</strong> Vocational Qualification in ICT — Game Programming / Software Development</li>
+            <li><strong>2007–2010:</strong> Vocational Qualification in Metalwork and Machinery (Sheet Metal Worker / Welder)</li>
           </ul>
-          <p>A third-person multiplayer hockey game developed with Unity and C#. Players control individual characters in team-based hockey matches using a dedicated server for online play.</p>
 
-          <div class="my-contributions">
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Built the full lobby system with room creation and joining functionality</li>
-              <li>Developed the custom game rule logic and scoring system</li>
-              <li>Handled goal detection and goal event logic</li>
-              <li>Overall gameplay programming</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2: Dark Rooms -->
-    <div class="project-card">
-      <h3>Dark Rooms</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <img src="images/horrorrr.gif" alt="Dark Rooms Gameplay" />
-          <p><a href="https://www.youtube.com/watch?v=E9iu_5RWEXo" target="_blank">Watch Gameplay Video</a></p>
-        </div>
-        <div class="project-details">
+          <h3>Previous Employment</h3>
+          <p>Below is a summary of my previous work experience:</p>
           <ul>
-            <li><strong>Overview:</strong> First-person horror game with puzzle elements.</li>
-            <li><strong>Tools:</strong> Unity, C#</li>
-            <li><strong>Team Size:</strong> 5</li>
-            <li><strong>Role:</strong> Lead Programmer & Project Manager</li>
-            <li><strong>Challenges:</strong> Balancing tension and puzzle difficulty.</li>
+            <li><strong>2022 – IT Trainee (Tutors Finland Oy, Spain)</strong><br/>Developed a street hockey game in Unity using C#. Prototyping, iterative development, hands-on coding, collaboration in a multilingual environment.</li>
+            <li><strong>2013–2019 – Sewer Specialist (Eerola Oy)</strong><br/>Sewer line unblocking, cleaning, and maintenance. Planning tasks, specialized tools & vehicles, independent problem solving.</li>
+            <li><strong>2012 – CNC Machinist (SEW Oy)</strong><br/>Operated CNC machines with tight tolerances. Precision and technical understanding.</li>
+            <li><strong>2011 – Security Officer (Securitas Aviation Finland Oy)</strong><br/>Passenger and vehicle screenings at Helsinki-Vantaa International Airport. Vigilance, teamwork, accountability, shifts incl. solo nights.</li>
           </ul>
-          <p>A first-person horror experience focusing on puzzle-solving and atmospheric tension.</p>
-
-          <div class="my-contributions">
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Programmed the player movement and interaction systems</li>
-              <li>Built the core puzzle mechanics and logic</li>
-              <li>Handled world-building, level scripting, and visual effects</li>
-              <li>Managed the project, team workflow, and task coordination</li>
-            </ul>
-          </div>
-          <p><a href="https://github.com/Juhosavi/DarkRooms" target="_blank">GitHub Repository</a></p>
         </div>
       </div>
-    </div>
+    </section>
 
-   <!-- Project 3: Spaceman & Spaceboy -->
-<div class="project-card">
-  <h3>Spaceman & Spaceboy</h3>
-  <div class="project-content">
-    <div class="project-media">
-      <img src="images/space.gif" alt="Spaceman & Spaceboy" />
-    </div>
-    <div class="project-details">
-      <ul>
-        <li><strong>Overview:</strong> 2D platformer with multiplayer elements inspired by classic arcade games.</li>
-        <li><strong>Tools:</strong> Unity, C#, GIMP, Krita</li>
-        <li><strong>Team Size:</strong> Solo Project</li>
-        <li><strong>Challenges:</strong> Implementing smooth multiplayer with Photon networking.</li>
-      </ul>
-      <p>An arcade-style 2D platformer featuring local multiplayer and save/load functionality.</p>
-
-      <div class="my-contributions">
-        <h4>My Contributions:</h4>
-        <ul>
-          <li>Created all game assets including sprites, animations and sound effects</li>
-          <li>Programmed all gameplay mechanics and player controls</li>
-          <li>Implemented Photon networking for multiplayer functionality</li>
-          <li>Built the save/load system</li>
-          <li>Created all UI elements and menu systems</li>
-        </ul>
-      </div>
-
-      <p>
-        <a href="https://juhosavi.itch.io/spacegame" target="_blank">Play Game</a> |
-        <a href="https://github.com/Juhosavi/Spaceman" target="_blank">GitHub Repository</a>
-      </p>
-    </div>
-  </div>
-</div>
-    <!-- Project 4: SpaceCat -->
-    <div class="project-card">
-      <h3>SpaceCat</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <img src="images/spacecat.gif" alt="SpaceCat Gameplay" />
-        </div>
-        <div class="project-details">
-          <ul>
-            <li><strong>Overview:</strong> 2D platformer with alien enemies.</li>
-            <li><strong>Tools:</strong> Unity, C#</li>
-            <li><strong>Team Size:</strong> 4</li>
-            <li><strong>Duration:</strong> 3 months</li>
-          </ul>
-          <p>A 2D platformer where players navigate alien-infested levels, collecting diamonds and fighting enemies.</p>
-
-          <div class="my-contributions">
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Implemented player movement</li>
-              <li>Created enemy AI and enemy movement</li>
-              <li>Built the scoring system and collectible logic</li>
-              <li>Designed basic level structure </li>
-            </ul>
-          </div>
-          <p><a href="https://github.com/Juhosavi/games/tree/main/SpaceCatGame" target="_blank">GitHub Repository</a></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 5: Chess Game & AI Bot -->
-    <div class="project-card">
-      <h3>Chess Game & AI Bot</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <img src="images/chessgame.png" alt="Chess Game & AI Bot" />
-        </div>
-        <div class="project-details">
-          <ul>
-            <li><strong>Overview:</strong> Comprehensive chess game with custom AI bot.</li>
-            <li><strong>Tools:</strong> C++, SFML</li>
-            <li><strong>Team Size:</strong> 2</li>
-            <li><strong>Duration:</strong> 3 months</li>
-          </ul>
-          <p>A complete chess implementation featuring an AI opponent using advanced algorithms.</p>
-
-          <div class="my-contributions">
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Implemented full chess rules including special moves and game end conditions</li>
-              <li>Developed the AI using alpha-beta pruning for move evaluation</li>
-              <li>Used multithreading for efficient concurrent move evaluation</li>
-              <li>Built the visual board and piece interaction using SFML</li>
-              <li>Handled game loop logic and state transitions</li>
-            </ul>
-          </div>
-          <p><a href="https://github.com/Juhosavi/Chessbot_cpp" target="_blank">GitHub Repository</a></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 6: Airport Z -->
-    <div class="project-card">
-      <h3>Airport Z</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/BIVM7mV6PLA" title="Airport Z Gameplay" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="project-details">
-          <ul>
-            <li><strong>Overview:</strong> Web-based adventure survival game with zombie elements.</li>
-            <li><strong>Tools:</strong> Python, JavaScript, HTML, CSS, SQL</li>
-            <li><strong>Backend:</strong> Flask + SQL Database</li>
-            <li><strong>Map API:</strong> Leaflet.js (OpenStreetMap)</li>
-            <li><strong>Team Size:</strong> 3</li>
-          </ul>
-          <p>A survival game where players navigate between airports using real-world maps while avoiding zombies.</p>
-
-          <div class="my-contributions">
-            <h4>My Contributions:</h4>
-            <ul>
-              <li>Developed the full backend with Flask and SQL database integration</li>
-              <li>Implemented interactive world map navigation using Leaflet.js and OpenStreetMap</li>
-
-            </ul>
-          </div>
-          <p><a href="https://github.com/Juhosavi/AirportZ_2077" target="_blank">GitHub Repository</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
     <!-- Skills Section -->
     <section id="skills" class="content-section">
       <h2>My Skills</h2>
-      <ul class="skills-list">
-        <li><strong>Main:</strong> C# &amp; Unity</li>
-        <li><strong>Other:</strong> C++, Python, JavaScript, HTML, CSS</li>
-        <li><strong>Engines:</strong> Unreal Engine, Godot</li>
-        <li><strong>Tools:</strong> Git, Plastic SCM, Visual Studio, VS Code, PyCharm</li>
-        <li><strong>Design:</strong> Blender, Krita, GIMP, Photoshop, Figma, InDesign</li>
-        <li><strong>QA & Testing:</strong> Manual testing, bug reporting, edge-case testing, gameplay polish, playtesting, and balancing during development phases</li>
-
-      </ul>
+      <div class="section-content">
+        <ul class="skills-list">
+          <li><strong>Main:</strong> C# &amp; Unity</li>
+          <li><strong>Other:</strong> C++, Python, JavaScript, HTML, CSS</li>
+          <li><strong>Engines:</strong> Unreal Engine, Godot</li>
+          <li><strong>Tools:</strong> Git, Plastic SCM, Visual Studio, VS Code, PyCharm</li>
+          <li><strong>Design:</strong> Blender, Krita, GIMP, Photoshop, Figma, InDesign</li>
+          <li><strong>QA & Testing:</strong> Manual testing, bug reporting, edge-case testing, gameplay polish, playtesting, and balancing during development phases</li>
+        </ul>
+      </div>
     </section>
 
-<section id="small-projects" class="content-section">
-  <h2>What I Build to Learn & Explore</h2>
-  <div class="project-grid">
-
-    <div class="project-card">
-      <h3>MetaHuman Face Capture Test</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/WgWmudWs31g"
-              title="MetaHuman Face Capture Test"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div class="project-details">
-          <ul>
-            <li><strong>Overview:</strong> Facial animation test using MetaHuman and iPhone Live Link Face.</li>
-            <li><strong>Tools:</strong> Unreal Engine 5, MetaHuman, iPhone, Live Link Face</li>
-            <li><strong>Role:</strong> Performance capture & technical testing</li>
-          </ul>
-          <p>This technical demo shows real-time facial motion capture with MetaHuman using iPhone’s Live Link Face. I tested syncing facial expressions and head movement to animation, exploring the potential of performance-driven character animation in UE5.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>Unreal Engine Stealth Game</h3>
-      <div class="project-content">
-        <div class="project-media">
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/-u6lUZMj-Uw"
-              title="Unreal Engine Stealth Game"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div class="project-details">
-          <ul>
-            <li><strong>Overview:</strong> Stealth game featuring takedowns and obstacle navigation.</li>
-            <li><strong>Tools:</strong> Unreal Engine 5, Blueprints, Metahumans</li>
-            <li><strong>Role:</strong> Developer focusing on gameplay mechanics</li>
-          </ul>
-          <p>A stealth game where players can perform takedowns, climb obstacles, and sneak past patrolling AI that triggers alarms upon detection. The game features MetaHumans, custom Mixamo animations, and a leaderboard for tracking the fastest completion times. Built with Unreal Engine 5 and Blueprints, based on a tutorial with custom modifications.</p>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-  <h3>Small Unreal Engine Cinematic</h3>
-  <div class="project-content">
-    <div class="project-media">
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/MolC3RQ9_Zg"
-          title="Small Unreal Engine Cinematic"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <div class="project-details">
-      <ul>
-        <li><strong>Overview:</strong> Short cinematic scene built in Unreal Engine 5.</li>
-        <li><strong>Tools:</strong> Unreal Engine 5, Sequencer, Blueprints</li>
-        <li><strong>Role:</strong> Solo project for learning cinematic workflow</li>
-      </ul>
-      <p>This Star Wars-inspired cinematic was created to explore Unreal Engine 5’s Sequencer, lighting, animation, and camera tools. I focused on creating a short but atmospheric scene using free assets and custom animations. This was a personal learning project to better understand UE5’s animation and visual storytelling tools.</p>
-    </div>
-  </div>
-</div>
-
-
-
-        <div class="project-card">
-          <h3>Bubble Brawl</h3>
-  <div class="project-content">
-    <div class="project-media">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/UjpuZHBd6EU" title="Bubble Brawl Gameplay" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="project-details">
-              <ul>
-                <li>
-                  <strong>Overview:</strong> 2-day Global Game Jam project for two players.
-                </li>
-                <li><strong>Tools:</strong> Unity, C#</li>
-                <li><strong>Role:</strong> Developer in a 3-person team</li>
-                <p>A 2-day Global Game Jam project for two players. Pop your opponent’s bubble to win. Game was made with Unity & C# by 3 person team.</p>
-              </ul>
-              <p>
-                <a
-                  href="https://juhosavi.itch.io/bubble-brawl"
-                  target="_blank"
-                  >Play the game</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
+    <!-- About Section -->
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <div class="section-content">
+        <p>Hi! I'm an aspiring game developer currently studying to become an engineer at Metropolia University of Applied Sciences. I previously completed a degree in Information and Communication Technology, specializing in game programming and software development. Games have always been a passion of mine, and I'm thrilled to be pursuing my dream of working in the gaming industry. My goal is to become a professional game developer, creating innovative and immersive gaming experiences that captivate players.</p>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="content-section">
       <h2>Contact</h2>
-      <p>
-        Interested in collaborating or learning more about my projects? Reach out!
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:savinainen.juho@gmail.com">savinainen.juho@gmail.com</a>
-      </p>
+      <div class="section-content">
+        <p>Interested in collaborating or learning more about my projects? Reach out!</p>
+        <div class="contact-btn-group">
+          <a href="mailto:savinainen.juho@gmail.com" class="btn btn-pill">Email Me</a>
+          <a href="https://linkedin.com/in/juho-savinainen-61819122b" target="_blank" class="btn btn-pill">LinkedIn</a>
+        </div>
+      </div>
     </section>
   </main>
 
