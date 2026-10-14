@@ -1,21 +1,22 @@
-// Simple section switcher with default to "projects"
+// Highlight the nav link of the section currently in view
 document.addEventListener('DOMContentLoaded', () => {
-  const DEFAULT_SECTION = 'projects';
-  const sections = Array.from(document.querySelectorAll('.content-section'));
-  const navButtons = Array.from(document.querySelectorAll('.nav-btn'));
+  const links = Array.from(document.querySelectorAll('.nav-link'));
+  const sections = links
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
 
-  const show = (id) => {
-    sections.forEach(s => s.style.display = 'none');
-    const el = document.getElementById(id);
-    if (el) el.style.display = 'block';
-    navButtons.forEach(b => b.classList.toggle('active', b.getAttribute('data-section') === id));
-    window.scrollTo({top: 0, behavior: 'smooth'});
+  const setActive = (id) => {
+    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
   };
 
-  navButtons.forEach(btn => {
-    btn.addEventListener('click', () => show(btn.getAttribute('data-section')));
-  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) setActive(entry.target.id);
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
 
-  // initial
-  show(DEFAULT_SECTION);
+  sections.forEach(s => observer.observe(s));
+
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 });
